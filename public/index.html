@@ -1,0 +1,33 @@
+<html>
+<head></head>
+<body>
+    <h1>Gin WebSocket test</h1>
+    <input type="text" id="saveName">
+
+    <button id="select" onclick="select();" value="select">查詢</button><br><br>
+
+    <button id="run" onclick="run();" value="run">拍照</button>
+
+    <input type="text" id="saveName" placeholder="請輸入檔名後，再按存擋" onkeyup="this.value=this.value.replace(/\s+/g,'')">
+
+    <button id="save" onclick="save();" value="save">存擋</button><br>
+
+    <img id="img" src="" alt="">
+    
+    <div id="test"></div>
+
+    <table>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td><button id="change" onclick="">修改</button></td>
+            <td><button id="del" onclick="">刪除</button></td>
+        </tr>
+    </table>
+    <script src="/index.js"></script>
+    <!-- <script src="/select.js"></script> -->
+    
+
+</body>
+</html>

@@ -1,0 +1,37 @@
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+</head>
+<body>
+    <h1>Gin WebSocket test</h1>
+    <h3>請輸入要查詢的檔案名稱</h3>
+
+    <input type="text" id="saveName">
+    <button id="select" onclick="select();" value="select">查詢</button><br>
+
+    <img id="img" src="" alt="">
+    
+    <div id="test"></div>
+
+    <script src="/select.js"></script>
+
+    <table>
+        <tr>
+        <td>id</td>
+        <td>檔案名稱</td>
+        <td>Picture</td>
+        <td></td>
+        <td></td>
+        </tr>
+        <tr>
+            <td>{{ .id }}</td>
+            <td>{{ .name }}</td>
+            <td><img id="img" src="" alt=""></td>
+            <td><button id="change" onclick="">修改</button></td>
+            <td><button id="del" onclick="">刪除</button></td>
+        </tr>
+    </table>
+  
+</body>
+</html>
